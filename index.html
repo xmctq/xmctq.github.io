@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maryam Alhawi — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ───────────────────────── NAV ───────────────────────── -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">maryam</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+    <div class="hero-blob blob-4"></div>
+    <div class="sparkle sparkle-1"></div>
+    <div class="sparkle sparkle-2"></div>
+    <div class="sparkle sparkle-3"></div>
+    <div class="sparkle sparkle-4"></div>
+    <div class="sparkle sparkle-5"></div>
+    <div class="sparkle sparkle-6"></div>
+    <div class="sparkle sparkle-7"></div>
+    <div class="sparkle sparkle-8"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1 class="hero-name">Maryam Alhawi</h1>
+      <p class="hero-tagline">Cybersecurity &amp; Full-Stack Developer</p>
+      <p class="hero-sub">
+        Final-year Cybersecurity B.Sc. student at the University of Bahrain
+        and a full-stack developer at Reboot Coding Institute —
+        building secure, scalable systems from web apps to low-level servers.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── ABOUT ───────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a final-year Cybersecurity student at the <strong>University of Bahrain</strong>
+            and a full-stack developer completing Reboot Coding Institute's
+            intensive programme — expected to graduate from both in August 2026.
+          </p>
+          <p>
+            My work spans secure web application development, systems programming in Rust and Go,
+            real-time communication, and applied cybersecurity — from penetration testing and risk
+            management to building my own HTTP servers and ray tracers from scratch.
+          </p>
+          <p>
+            Outside of code, I actively participate in CTF competitions, hackathons, and
+            cybersecurity conferences like the Arab International Cybersecurity Conference.
+            Passionate about fintech, AI, and DevOps.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card card-lavender">
+            <span class="info-icon">🎓</span>
+            <div>
+              <strong>University of Bahrain</strong>
+              <p>B.Sc. Cybersecurity</p>
+              <p class="muted">Sep 2022 &ndash; Aug 2026</p>
+            </div>
+          </div>
+          <div class="info-card card-mint">
+            <span class="info-icon">💻</span>
+            <div>
+              <strong>Reboot Coding Institute</strong>
+              <p>Full-Stack Development Program</p>
+              <p class="muted">Mar 2023 &ndash; May 2026</p>
+            </div>
+          </div>
+          <div class="info-card card-peach">
+            <span class="info-icon">☁️</span>
+            <div>
+              <strong>AWS Certified Cloud Practitioner</strong>
+              <p>Amazon Web Services</p>
+            </div>
+          </div>
+          <div class="info-card card-sky">
+            <span class="info-icon">🔐</span>
+            <div>
+              <strong>Cybersecurity Certifications</strong>
+              <p>UC Irvine &amp; Board Infinity (Coursera)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── PROJECTS ───────────────────────── -->
+  <section class="section section-tinted" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A selection of work built at Reboot and beyond.</p>
+
+      <!-- ══════ SPOTLIGHT — Senior Project ══════ -->
+      <div class="spotlight-card" data-cat="security fullstack" data-lang="python">
+        <div class="spotlight-left">
+          <div class="spotlight-meta">
+            <span class="spotlight-eyebrow">Senior Capstone Project</span>
+            <span class="card-badge badge-rose">Security</span>
+            <span class="card-badge badge-lavender">Full Stack</span>
+          </div>
+          <h2 class="spotlight-title">OpticNet</h2>
+          <p class="spotlight-desc">
+            A comprehensive network reconnaissance and vulnerability scanning platform — the largest
+            and most complex project I've built. Integrates industry-standard tools (Nmap, Nikto,
+            SQLMap) into a unified security dashboard with scheduling, role-based access control,
+            multi-language support (Arabic &amp; English), and a complete audit trail.
+          </p>
+          <ul class="spotlight-highlights">
+            <li>Flask backend with JWT auth &amp; multi-role RBAC</li>
+            <li>Nmap, Nikto, SQLMap scanner orchestration</li>
+            <li>Scheduled scans, real-time dashboard &amp; historical reports</li>
+            <li>Full Arabic / English bilingual interface</li>
+            <li>Dockerised deployment with encryption &amp; logging</li>
+            <li>Comprehensive security audit &amp; test suite</li>
+          </ul>
+          <div class="card-tags" style="margin-top:1.5rem;">
+            <span class="tag tag-blue">Python</span>
+            <span class="tag tag-green">Flask</span>
+            <span class="tag tag-green">Docker</span>
+            <span class="tag tag-orange">Nmap / Nikto / SQLMap</span>
+            <span class="tag tag-blue">SQLite</span>
+            <span class="tag tag-orange">JWT Auth</span>
+          </div>
+        </div>
+        <div class="spotlight-right">
+          <p class="spotlight-right-label">Project at a glance</p>
+          <div class="spotlight-stat-grid">
+            <div class="spotlight-stat">
+              <span class="stat-label">Security tools integrated (Nmap, Nikto, SQLMap &amp; more)</span>
+              <span class="stat-num">7+</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Local AI (Ollama) for intelligent vulnerability remediation</span>
+              <span class="stat-num">AI</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Multi-role access control system</span>
+              <span class="stat-num">RBAC</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Fully bilingual interface</span>
+              <span class="stat-num">AR/EN</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">API architecture with JWT authentication</span>
+              <span class="stat-num">REST</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Containerised &amp; portable deployment</span>
+              <span class="stat-num">Docker</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Automated test suite &amp; security audit</span>
+              <span class="stat-num">Pytest</span>
+            </div>
+            <div class="spotlight-stat">
+              <span class="stat-label">Exportable vulnerability scan reports</span>
+              <span class="stat-num">PDF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════ FILTER BAR ══════ -->
+      <div class="filter-bar">
+        <div class="filter-row">
+          <span class="filter-label">Category</span>
+          <div class="filter-tabs" id="catTabs">
+            <button class="filter-btn active" data-cat="all">All</button>
+            <button class="filter-btn" data-cat="fullstack">Full Stack</button>
+            <button class="filter-btn" data-cat="systems">Systems</button>
+            <button class="filter-btn" data-cat="algorithms">Algorithms</button>
+            <button class="filter-btn" data-cat="networking">Networking</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label">Language</span>
+          <div class="filter-tabs" id="langTabs">
+            <button class="filter-btn active" data-lang="all">All</button>
+            <button class="filter-btn" data-lang="go">Go</button>
+            <button class="filter-btn" data-lang="rust">Rust</button>
+            <button class="filter-btn" data-lang="python">Python</button>
+            <button class="filter-btn" data-lang="java">Java</button>
+            <button class="filter-btn" data-lang="php">PHP</button>
+            <button class="filter-btn" data-lang="js">JavaScript</button>
+            <button class="filter-btn" data-lang="linux">Linux / Infra</button>
+          </div>
+        </div>
+      </div>
+      <p class="results-count" id="resultsCount"></p>
+
+      <!-- ══════ PROJECT GRID ══════ -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- ── FEATURED (6 shown by default, fills a clean 3×2 grid) ── -->
+
+        <!-- Social Network -->
+        <article class="project-card" data-featured="true"
+          data-cat="fullstack" data-lang="go js">
+          <div class="card-accent accent-sky"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-sky">Full Stack</span>
+            </div>
+            <h3>Social Network Platform</h3>
+            <p>
+              A full-featured social platform with profiles, posts, followers, groups,
+              events, and real-time messaging — built entirely from scratch without any framework.
+            </p>
+            <ul class="card-highlights">
+              <li>Real-time chat via WebSockets</li>
+              <li>Session-based auth with secure cookies</li>
+              <li>Database migrations, follower &amp; group systems</li>
+              <li>Dockerised deployment</li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-pink">Next.js</span>
+              <span class="tag tag-pink">React</span>
+              <span class="tag tag-green">Docker</span>
+              <span class="tag tag-blue">SQLite</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Localhost HTTP Server -->
+        <article class="project-card" data-featured="true"
+          data-cat="systems" data-lang="rust python">
+          <div class="card-accent accent-mint"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-mint">Systems</span>
+            </div>
+            <h3>Localhost HTTP Server</h3>
+            <p>
+              A high-performance HTTP/1.1 server written in Rust using event-driven I/O.
+              Supports CGI (Python), virtual hosting, session auth, and achieved
+              99% availability with zero memory leaks under stress tests.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Rust</span>
+              <span class="tag tag-blue">Python CGI</span>
+              <span class="tag tag-blue">HTTP/1.1</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Maze Wars FPS -->
+        <article class="project-card" data-featured="true"
+          data-cat="algorithms systems" data-lang="rust">
+          <div class="card-accent accent-peach"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-peach">Game Dev</span>
+              <span class="card-badge badge-sky">Multiplayer</span>
+            </div>
+            <h3>Maze Wars — Multiplayer FPS</h3>
+            <p>
+              A multiplayer first-person shooter in Rust with 2.5D raycasting graphics,
+              procedurally generated mazes, real-time UDP networking, server-authoritative
+              state, and support for up to 10 concurrent players.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Rust</span>
+              <span class="tag tag-blue">UDP Networking</span>
+              <span class="tag tag-blue">Raycasting</span>
+              <span class="tag tag-green">Proc. Generation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ray Tracer -->
+        <article class="project-card" data-featured="true"
+          data-cat="systems" data-lang="rust">
+          <div class="card-accent accent-sky"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-sky">Systems</span>
+              <span class="card-badge badge-lavender">Graphics</span>
+            </div>
+            <h3>Ray Tracing Renderer</h3>
+            <p>
+              A realistic 3D rendering engine in Rust using ray-tracing. Renders spheres,
+              planes, and cylinders with accurate lighting, reflections, and interactive
+              camera controls — zoom, rotation, and viewpoint changes.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Rust</span>
+              <span class="tag tag-blue">Ray Tracing</span>
+              <span class="tag tag-blue">3D Graphics</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Deep in System -->
+        <article class="project-card" data-featured="true"
+          data-cat="systems" data-lang="linux">
+          <div class="card-accent accent-lavender"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-lavender">Systems</span>
+              <span class="card-badge badge-mint">Cloud DevOps</span>
+            </div>
+            <h3>Deep in System</h3>
+            <p>
+              Full Ubuntu Server setup on VirtualBox — manual disk partitioning, SSH hardening,
+              UFW firewall, user management, FTP server, MySQL, WordPress deployment, automated
+              backups with cron jobs, and a complete security audit.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-green">Linux / Ubuntu</span>
+              <span class="tag tag-blue">Bash</span>
+              <span class="tag tag-blue">MySQL</span>
+              <span class="tag tag-orange">SSH / Firewall</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real-Time Forum — 6th featured -->
+        <article class="project-card" data-featured="true"
+          data-cat="fullstack" data-lang="go js">
+          <div class="card-accent accent-peach"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-peach">Full Stack</span>
+            </div>
+            <h3>Real-Time Forum</h3>
+            <p>
+              A forum with real-time private messaging via WebSockets, post categories,
+              filtering, and secure session auth — built entirely in Go and vanilla JS.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-pink">WebSockets</span>
+              <span class="tag tag-blue">SQLite</span>
+              <span class="tag tag-blue">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── SECONDARY (hidden by default) ── -->
+
+        <!-- Room Booking -->
+        <article class="project-card" data-featured="false"
+          data-cat="fullstack" data-lang="php js">
+          <div class="card-accent accent-peach"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-peach">Full Stack</span>
+              <span class="card-badge badge-mint">Team Project</span>
+            </div>
+            <h3>IT College Room Booking System</h3>
+            <p>
+              Multi-role room booking platform for a college, built in an Agile team.
+              Admin dashboards, conflict-detection algorithms, reporting, commenting system,
+              and full responsiveness.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">PHP</span>
+              <span class="tag tag-blue">MySQL</span>
+              <span class="tag tag-pink">Tailwind</span>
+              <span class="tag tag-blue">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- GraphQL Dashboard -->
+        <article class="project-card" data-featured="false"
+          data-cat="fullstack" data-lang="js">
+          <div class="card-accent accent-lavender"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-lavender">Dashboard</span>
+            </div>
+            <h3>GraphQL Profile Dashboard</h3>
+            <p>
+              A personal stats dashboard querying the Reboot01 GraphQL API — visualises
+              XP growth, skill distribution, audit ratios, and user levels with
+              interactive charts.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-pink">Next.js</span>
+              <span class="tag tag-pink">GraphQL</span>
+              <span class="tag tag-pink">React</span>
+              <span class="tag tag-green">ApexCharts</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 0-Shell -->
+        <article class="project-card" data-featured="false"
+          data-cat="systems" data-lang="rust">
+          <div class="card-accent accent-mint"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-mint">Systems</span>
+            </div>
+            <h3>0-Shell</h3>
+            <p>
+              A minimalist Unix shell in Rust using raw system calls — no external binaries,
+              no bash. Implements echo, pwd, cd, ls, cat, mkdir, cp, mv, rm and more,
+              inspired by BusyBox. Handles quoting, flags, and robust error handling.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Rust</span>
+              <span class="tag tag-blue">Unix Syscalls</span>
+              <span class="tag tag-blue">POSIX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Deep in Net -->
+        <article class="project-card" data-featured="false"
+          data-cat="networking" data-lang="linux">
+          <div class="card-accent accent-sky"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-sky">Networking</span>
+              <span class="card-badge badge-lavender">Cloud DevOps</span>
+            </div>
+            <h3>Deep in Net</h3>
+            <p>
+              Built and configured multiple network topologies in Cisco Packet Tracer —
+              static IPs, VLANs, routing, DNS, HTTPS, FTP, and full connectivity validation
+              across complex multi-device networks.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-green">Cisco Packet Tracer</span>
+              <span class="tag tag-blue">TCP/IP</span>
+              <span class="tag tag-blue">Routing &amp; VLANs</span>
+              <span class="tag tag-blue">DNS / FTP / HTTPS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Net-cat -->
+        <article class="project-card" data-featured="false"
+          data-cat="networking" data-lang="go">
+          <div class="card-accent accent-lavender"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-lavender">Networking</span>
+            </div>
+            <h3>Net-Cat</h3>
+            <p>
+              A re-implementation of netcat in Go — TCP group chat rooms with connection
+              limits, timestamps, message history for new joiners, and graceful
+              disconnection handling.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-blue">TCP</span>
+              <span class="tag tag-green">CLI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wget -->
+        <article class="project-card" data-featured="false"
+          data-cat="networking systems" data-lang="go">
+          <div class="card-accent accent-sky"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-sky">Networking</span>
+            </div>
+            <h3>Wget Clone</h3>
+            <p>
+              A feature-complete Go implementation of wget — single file downloads with
+              progress tracking, concurrent downloads, rate limiting, background mode,
+              and full website mirroring.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-blue">HTTP</span>
+              <span class="tag tag-green">CLI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI Game Bot -->
+        <article class="project-card" data-featured="false"
+          data-cat="algorithms" data-lang="go">
+          <div class="card-accent accent-lavender"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-lavender">AI</span>
+              <span class="card-badge badge-mint">Algorithms</span>
+            </div>
+            <h3>AI Game Bot — Filler</h3>
+            <p>
+              A strategic game bot that analyses the board state and calculates optimal
+              moves using heuristic evaluation — achieving an ~80% win rate against
+              competing bots.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-blue">AI / Heuristics</span>
+              <span class="tag tag-blue">Game Theory</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Smart Road -->
+        <article class="project-card" data-featured="false"
+          data-cat="algorithms" data-lang="go">
+          <div class="card-accent accent-mint"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-mint">Simulation</span>
+              <span class="card-badge badge-lavender">Algorithms</span>
+            </div>
+            <h3>Smart Road Simulation</h3>
+            <p>
+              A traffic flow simulation modelling vehicles navigating intersections using
+              concurrent goroutines — avoiding collisions, deadlocks, and race conditions
+              while maximising throughput.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-blue">Concurrency</span>
+              <span class="tag tag-blue">Simulation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lem-in -->
+        <article class="project-card" data-featured="false"
+          data-cat="algorithms" data-lang="go">
+          <div class="card-accent accent-sky"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-sky">Algorithms</span>
+            </div>
+            <h3>Lem-in (Ant Farm Pathfinding)</h3>
+            <p>
+              Finds the optimal set of non-colliding paths through a tunnel network to
+              move ants from start to end in the fewest turns — custom max-flow / BFS
+              implementation in Go.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Go</span>
+              <span class="tag tag-blue">Graph Theory</span>
+              <span class="tag tag-blue">BFS / Max-Flow</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Library Management -->
+        <article class="project-card" data-featured="false"
+          data-cat="algorithms" data-lang="java">
+          <div class="card-accent accent-peach"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-badge badge-peach">OOP / Data Structures</span>
+            </div>
+            <h3>Library Management System</h3>
+            <p>
+              A menu-driven library system in Java using OOP principles — LinkedList-based
+              storage, member management, issuance tracking, book limits, and clean
+              encapsulated architecture.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-blue">Java</span>
+              <span class="tag tag-blue">OOP</span>
+              <span class="tag tag-blue">Data Structures</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <!-- Show more / empty state -->
+      <div class="projects-footer" id="projectsFooter">
+        <button class="btn btn-ghost expand-btn" id="expandBtn">
+          Show all 12 more projects ↓
+        </button>
+      </div>
+      <div class="empty-state" id="emptyState" style="display:none">
+        <p>No projects match the selected filters.</p>
+        <button class="btn btn-ghost" id="resetFilters">Reset filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── SKILLS ───────────────────────── -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <!-- Programming & Dev -->
+      <div class="skill-block">
+        <h3 class="skill-block-title">Programming &amp; Development</h3>
+        <div class="skill-rows">
+
+          <div class="skill-row">
+            <span class="skill-row-label">Languages</span>
+            <div class="skill-pills">
+              <span class="pill pill-blue">Go</span>
+              <span class="pill pill-orange">Rust</span>
+              <span class="pill pill-green">Python</span>
+              <span class="pill pill-peach">Java</span>
+              <span class="pill pill-pink">PHP</span>
+              <span class="pill pill-lavender">JavaScript</span>
+              <span class="pill pill-blue">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Frontend</span>
+            <div class="skill-pills">
+              <span class="pill pill-lavender">React.js</span>
+              <span class="pill pill-blue">Next.js</span>
+              <span class="pill pill-green">Tailwind CSS</span>
+              <span class="pill pill-orange">HTML &amp; CSS</span>
+              <span class="pill pill-pink">AJAX</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Backend &amp; APIs</span>
+            <div class="skill-pills">
+              <span class="pill pill-peach">RESTful APIs</span>
+              <span class="pill pill-lavender">WebSockets</span>
+              <span class="pill pill-blue">GraphQL</span>
+              <span class="pill pill-green">Session Auth</span>
+              <span class="pill pill-orange">Flask</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Cloud &amp; DevOps</span>
+            <div class="skill-pills">
+              <span class="pill pill-blue">AWS</span>
+              <span class="pill pill-lavender">Docker</span>
+              <span class="pill pill-green">Linux</span>
+              <span class="pill pill-orange">Git &amp; GitHub</span>
+              <span class="pill pill-pink">Bash</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Databases</span>
+            <div class="skill-pills">
+              <span class="pill pill-peach">MySQL</span>
+              <span class="pill pill-lavender">SQLite</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="skill-block">
+        <h3 class="skill-block-title">Cybersecurity</h3>
+        <div class="skill-rows">
+
+          <div class="skill-row">
+            <span class="skill-row-label">Offensive &amp; Defensive</span>
+            <div class="skill-pills">
+              <span class="pill pill-orange">Penetration Testing</span>
+              <span class="pill pill-pink">Ethical Hacking</span>
+              <span class="pill pill-blue">Nmap / Nikto / SQLMap</span>
+              <span class="pill pill-lavender">Vulnerability Scanning</span>
+              <span class="pill pill-green">CTF Competitions</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Governance &amp; Risk</span>
+            <div class="skill-pills">
+              <span class="pill pill-peach">Risk Management</span>
+              <span class="pill pill-blue">IT Auditing</span>
+              <span class="pill pill-orange">Security Ethics</span>
+              <span class="pill pill-green">Secure Software Dev</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Networking</span>
+            <div class="skill-pills">
+              <span class="pill pill-orange">Network Security</span>
+              <span class="pill pill-blue">TCP/IP &amp; Routing</span>
+              <span class="pill pill-pink">Firewalls &amp; SSH</span>
+              <span class="pill pill-lavender">VLANs &amp; DNS</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row-label">Uni Coursework</span>
+            <div class="skill-pills">
+              <span class="pill pill-peach">Secure Software Development</span>
+              <span class="pill pill-blue">Data Structures &amp; Algorithms</span>
+              <span class="pill pill-green">Network Security</span>
+              <span class="pill pill-lavender">Risk Management</span>
+              <span class="pill pill-orange">IT Auditing</span>
+              <span class="pill pill-pink">Penetration Testing</span>
+              <span class="pill pill-blue">Ethical Hacking</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ───────────────────────── CONTACT ───────────────────────── -->
+  <section class="section section-solid" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-sub">Open to internships, collaborations, and interesting conversations.</p>
+
+      <div class="contact-layout">
+
+        <!-- Left: links -->
+        <div class="contact-info contact-info-card">
+          <p class="contact-info-intro">
+            Feel free to reach out — whether it's about a project, an opportunity,
+            or just to say hi. I'll get back to you as soon as I can.
+          </p>
+          <div class="contact-links-flat">
+            <a href="mailto:maryamalhawi04@gmail.com" class="contact-link">
+              <span class="cl-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07C8E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2.5"/>
+                  <path d="M22 7 13.03 12.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <span>maryamalhawi04@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/xmctq" target="_blank" rel="noopener" class="contact-link">
+              <span class="cl-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#E07C8E">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg>
+              </span>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/xmctq</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/maryam-alhawi-71a536332" target="_blank" rel="noopener" class="contact-link">
+              <span class="cl-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#E07C8E">
+                  <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                </svg>
+              </span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>Maryam Alhawi</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <form class="contact-form" id="contactForm" autocomplete="off">
+          <!-- Web3Forms access key — replace YOUR_ACCESS_KEY after signing up at web3forms.com -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="New message from portfolio" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit" id="formSubmit">
+            Send message →
+          </button>
+
+          <!-- Feedback states -->
+          <div class="form-feedback success" id="formSuccess">
+            ✨ Message sent! I'll get back to you soon.
+          </div>
+          <div class="form-feedback error" id="formError">
+            Something went wrong. Please try emailing me directly.
+          </div>
+        </form>
+
+      </div><!-- /contact-layout -->
+    </div>
+  </section>
+
+  <!-- ───────────────────────── FOOTER ───────────────────────── -->
+  <footer class="footer">
+    <p>Designed &amp; built by Maryam Alhawi &mdash; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
