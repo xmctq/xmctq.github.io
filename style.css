@@ -1075,3 +1075,32 @@ img { display: block; max-width: 100%; }
   .contact-links { flex-direction: column; align-items: center; }
   .section { padding: 4rem 1rem; }
 }
+
+/* ── GitHub card link ────────────────────────────────── */
+.card-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.card-github svg { flex-shrink: 0; }
+.card-github:hover { color: var(--accent); }
+
+.spotlight-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.spotlight-github:hover { color: var(--accent); }
+}
