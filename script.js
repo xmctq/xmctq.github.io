@@ -18,7 +18,7 @@ navLinks.querySelectorAll('a').forEach(a =>
 
 /* ── Reveal on scroll ─────────────────────────── */
 const revealTargets = document.querySelectorAll(
-  '.info-card, .xp-item, .skill-group, .contact-card, .section-title, ' +
+  '.info-card, .award-card, .xp-item, .skill-group, .contact-card, .section-title, ' +
   '.section-sub, .about-text, .hero-content, .filter-bar, ' +
   '.spotlight-card, .skills-category-title, .results-count'
 );
@@ -205,7 +205,7 @@ const lightbox        = document.getElementById('lightbox');
 const lightboxImg     = document.getElementById('lightboxImg');
 const lightboxCaption = document.getElementById('lightboxCaption');
 
-document.querySelectorAll('.award-thumb').forEach(btn => {
+document.querySelectorAll('.award-photo').forEach(btn => {
   btn.addEventListener('click', () => {
     lightboxImg.src = btn.dataset.full;
     lightboxImg.alt = btn.querySelector('img').alt;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maryam Alhawi — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -86,34 +86,34 @@
           </p>
         </div>
         <div class="about-cards">
-          <div class="info-card award-card">
-            <span class="info-icon">🏆</span>
-            <div>
+          <article class="award-card">
+            <button type="button" class="award-photo" data-full="images/awards/benefit-fintech-award.jpg"
+                    data-caption="Benefit Fintech 2026 Award &amp; Masar Internship certificate — The Benefit Company"
+                    aria-label="View photo: Benefit Fintech 2026 Award">
+              <img src="images/awards/benefit-fintech-award-cover.jpg" alt="Benefit Fintech 2026 Award trophy and certificate" loading="lazy" width="720" height="450">
+              <span class="award-badge">🏆 Winner</span>
+              <span class="award-zoom" aria-hidden="true">View photo</span>
+            </button>
+            <div class="award-body">
               <strong>Benefit Fintech 2026 Award</strong>
               <p>The Benefit Company — business case recognised for high implementation potential</p>
               <p class="muted">Aug 2026</p>
             </div>
-            <button type="button" class="award-thumb" data-full="images/awards/benefit-fintech-award.jpg"
-                    data-caption="Benefit Fintech 2026 Award &amp; Masar Internship certificate — The Benefit Company"
-                    aria-label="View photo: Benefit Fintech 2026 Award">
-              <img src="images/awards/benefit-fintech-award-thumb.jpg" alt="Benefit Fintech 2026 Award trophy and certificate" loading="lazy" width="160" height="160">
-              <span class="award-thumb-zoom" aria-hidden="true">⤢</span>
+          </article>
+          <article class="award-card">
+            <button type="button" class="award-photo" data-full="images/awards/senior-project-first-place.jpg"
+                    data-caption="1st Place, IT Senior Projects Exhibition — OpticNet at the University of Bahrain"
+                    aria-label="View photo: 1st Place at the IT Senior Projects Exhibition">
+              <img src="images/awards/senior-project-first-place-cover.jpg" alt="OpticNet booth with the 1st place sign" loading="lazy" width="720" height="450">
+              <span class="award-badge">🥇 1st Place</span>
+              <span class="award-zoom" aria-hidden="true">View photo</span>
             </button>
-          </div>
-          <div class="info-card award-card">
-            <span class="info-icon">🥇</span>
-            <div>
+            <div class="award-body">
               <strong>1st Place — IT/Cybersecurity Exhibition</strong>
               <p>University of Bahrain — for OpticNet, my AI-powered senior project</p>
               <p class="muted">Jun 2026</p>
             </div>
-            <button type="button" class="award-thumb" data-full="images/awards/senior-project-first-place.jpg"
-                    data-caption="1st Place, IT Senior Projects Exhibition — OpticNet at the University of Bahrain"
-                    aria-label="View photo: 1st Place at the IT Senior Projects Exhibition">
-              <img src="images/awards/senior-project-first-place-thumb.jpg" alt="OpticNet booth with the 1st place sign" loading="lazy" width="160" height="160">
-              <span class="award-thumb-zoom" aria-hidden="true">⤢</span>
-            </button>
-          </div>
+          </article>
           <div class="info-card card-mint">
             <span class="info-icon">💻</span>
             <div>
@@ -1146,6 +1146,6 @@
     </figure>
   </dialog>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
