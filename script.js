@@ -18,7 +18,7 @@ navLinks.querySelectorAll('a').forEach(a =>
 
 /* ── Reveal on scroll ─────────────────────────── */
 const revealTargets = document.querySelectorAll(
-  '.info-card, .skill-group, .contact-card, .section-title, ' +
+  '.info-card, .xp-item, .skill-group, .contact-card, .section-title, ' +
   '.section-sub, .about-text, .hero-content, .filter-bar, ' +
   '.spotlight-card, .skills-category-title, .results-count'
 );
