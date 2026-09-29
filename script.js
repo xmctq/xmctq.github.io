@@ -200,6 +200,23 @@ if (contactForm) {
   });
 }
 
+/* ── Award photo lightbox ─────────────────────── */
+const lightbox        = document.getElementById('lightbox');
+const lightboxImg     = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+
+document.querySelectorAll('.award-thumb').forEach(btn => {
+  btn.addEventListener('click', () => {
+    lightboxImg.src = btn.dataset.full;
+    lightboxImg.alt = btn.querySelector('img').alt;
+    lightboxCaption.textContent = btn.dataset.caption;
+    lightbox.showModal();
+  });
+});
+lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+// Click on the backdrop (outside the figure) closes it
+lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
+
 /* ── Active nav highlight on scroll ──────────── */
 const sections   = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
